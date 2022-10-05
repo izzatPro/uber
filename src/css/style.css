@@ -123,3 +123,65 @@ nav{
     width: 259px;
     height: 63px;
 }
+.reason{
+    min-height: 849px;
+    background: #f2f2f2;
+    padding: 20px 0 38px 0;
+}
+.reason .reason_adventages{
+    width: 112px;
+    height: 24px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reason .reason_subtitle{
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    color:#222;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reason .reason_icon{
+    width: 116px;
+    height: 116px;
+    border-radius:50%;
+    background: #1EACC7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reason .reason_icon img{
+    width: 83px;
+    height: 60px;
+}
+.reason .reason_text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}
+.reason .reason_text_subtitle{
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 400;
+}
+.reason .row{
+    margin-top: 16px;
+}
+.reason .flex{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 26px;
+}
+.reason .reason_icon_text{
+    max-width: 371px;
+}

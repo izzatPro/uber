@@ -1,0 +1,24 @@
+* {
+    font-family: 'Roboto' , sans-serif;
+}
+nav{
+    height: 50.73px;
+    background: #212121;
+}
+.menu {
+    padding: 13px 70px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.menu .menu_link{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.menu .menu_item:not(:last-child){
+    border-right: 2px dotted black ;
+    padding-right: 28px;
+}

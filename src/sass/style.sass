@@ -1,3 +1,5 @@
+$main-color: #1eacc7
+$second-color: #ff5656
 *
   font-family: 'Roboto' , sans-serif
 
@@ -63,11 +65,12 @@ nav
     display: block
     margin-top: 8px
     color: #fff
-    font-size: 22px
+    font-size: 18px
     font-weight: 400
     text-transform: uppercase
     text-align: right
-    line-height: 12px
+    
+
 
   .subheader_btn
     font-size: 14px
@@ -83,21 +86,25 @@ nav
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
     margin-top: 23px
     border: none
-
-.promo_btn
-  font-size: 14px
-  font-weight: 400
-  text-transform: uppercase
-  text-align: center
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-  color: #FFFFFF
-  width: 172px
-  height: 46px
-  border-radius: 4px
-  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
-  margin-top: 23px
-  border: none
+    &:hover
+      background-image: none
+      background: $main-color
+      
+.promo
+  &_btn
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    color: #FFFFFF
+    width: 172px
+    height: 46px
+    border-radius: 4px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    margin-top: 23px
+    border: none
 
 .promo
   min-height: 800px
@@ -135,6 +142,10 @@ nav
     font-size: 18px
     width: 259px
     height: 63px
+    &:hover
+      background-image: none
+      background: $main-color
+    
 
 .label
       width: 112px
@@ -254,6 +265,27 @@ nav
       bottom: 35px
       left: 50%
       transform: translateX(-50%)
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main-color
+        transition: 0.3s
+      &::after
+        content: ""
+        position: absolute
+        left: 50%
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $main-color
+        transition: 0.3s
+        transform: translateX(-50%)
+      &:hover
+        &::after, &::before
+          background: red
+          
 .pre_car
   padding-top: 37px
   min-height: 499px
@@ -285,3 +317,47 @@ nav
     color: #222
     padding-top: 210px
   
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      font-size: 17px
+      font-weight: 300
+      margin-bottom: 10px
+      position: relative
+      &::before
+        display: block
+        position: absolute
+        left: -31px
+        top: 3px
+        content: ''
+        width: 21px
+        height: 20px
+        background: url('../icons/check_blue 1.png') center center / cover no-repeat
+  .warning
+    .require_title
+     color: $second-color
+    .require_list
+      li
+        &::before
+          background: url('../icons/check_red 6.png') center center / cover no-repeat
+
+.require_descr
+  margin-top: 25px
+  font-size: 17px
+  font-weight: 300
+  line-height: 24px
+  color: #1ca8c3
+  max-width: 480px
+
